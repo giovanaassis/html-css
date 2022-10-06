@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: "Between1&2";
+    src: url(fontes/PanicStricken.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor01: #D91A83;
+    --cor02: #BF0F30;
+    --cor03: #44B5C7;
+    --cor04: #F2D5BB;
+    --cor05: #F2766B;
+
+    --fontepadrao: Arial, Helvetica, sans-serif;
+    --fontetitulo: "Bebas Neue", cursive;
+    --fontebetween: "Between1&2", cursive;
+}
+
+body {
+    background-color: var(--cor04);
+    font-family: var(--fontepadrao);
+}
+
+header {
+    background-color: var(--cor01);
+    color: white;
+    font-family: var(--fontetitulo);
+    font-weight: normal;
+    background-image: linear-gradient(to top, var(--cor02), var(--cor01));
+    text-align: center;
+    padding: 10px;
+}
+
+header > h1 {
+    margin-bottom: 10px;
+    font-size: 3.3em;
+}
+header > p {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: var(--cor05);
+    font-family: var(--fontepadrao);
+
+    height: 35px;
+    padding-top: 20px;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 20px;
+}
+
+nav > a:hover {
+    background-color: var(--cor04);
+    color: var(--cor02);
+    padding-bottom: 18.1px;
+    border-radius: 10px;
+    transition-duration: .3s;
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+main img {
+    width: 100%;
+}
+
+.destaque {
+    background-color: var(--cor03);
+    padding: 1px;
+}
+
+aside {
+    background-color: var(--cor04);
+}
+
+main p > a {
+    color: var(--cor01);
+    text-decoration: none;
+}
+
+main p > a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--cor01);
+}

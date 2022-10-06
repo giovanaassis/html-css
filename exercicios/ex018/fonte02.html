@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: Newspaper;
+            src: url(fonts/OldNewspaperTypes.ttf) format('truetype');
+            font-weight: normal;
+            font-size: 16px;
+
+            /* 
+                Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
+        }
+        body {
+            font: normal 16px sans-serif
+        }
+        
+        h1 {
+            font-family: Newspaper, sans-serif;
+            font-size: 2.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa praesentium ducimus enim magni inventore eligendi, architecto error incidunt, eum aliquid voluptatibus nostrum quidem sequi unde perspiciatis deserunt facilis exercitationem.</p>
+</body>
+</html>

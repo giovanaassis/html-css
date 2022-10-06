@@ -1,0 +1,10 @@
+PALETA DE CORES
+
+--cor01 : #D91A83
+--cor02 : #BF0F30
+--cor03 : #44B5C7
+--cor04 : #F2D5BB
+--cor05 : #F2766B
+
+FONTES
+
