@@ -6,6 +6,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 :root {
@@ -17,10 +18,10 @@
     --fontepoema: 'Sriracha', cursive;
 }
 
-body {
+html, body {
+    background-color: lightgray;
     min-height: 100vh;
     font-family: var(--fontepadrao);
-    font-size: 16px;
     line-height: 13.3px;
 }
 
@@ -31,10 +32,8 @@ header {
 }
 
 header > h1 {
-    font-family: var(--fontetitulo);
+    font: bold 10vw var(--fontetitulo);
     font-variant: small-caps;
-    font-size: 136px;
-    font-weight: bold;
     line-height: 113.8px;
     padding-top: 50px;
 }
@@ -44,36 +43,34 @@ header > p {
 }
 
 section {
-    font-family: var(--fontepoema);
-    font-size: 47px;
+    background-color: var(--cor02);
+    font: 3.5vw var(--fontepoema);
     line-height: 2em;
 
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    padding-left: 30px;
+    padding: 50px 0px 50px 30px;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 #flor {
-    background-image: url(imagens/fundo001.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
+    background: url(imagens/fundo001.jpg) right center fixed;
     background-size: cover;
-    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
 }
 
 #carta {
-    background-image: url(imagens/fundo002.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
+    background: url(imagens/fundo002.jpg) center center fixed;
     background-size: cover;
-    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
 }
 
 .quadrado {
     background-color: rgba(0, 0, 0, 0.514);
     color: white;
-    width: 570px;
-    padding-left: 10px;
+    display: inline-block;
+    padding: 10px;
 }
 
 a {
