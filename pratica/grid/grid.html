@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 5px;
+            width: 400px;
+            height: 400px;
+        }
+
+        .keys {
+            font-size: 2em;
+            text-align: center;
+            background-color: rgb(101, 182, 135);
+        }
+
+        #zero {
+            grid-column: span 2;
+            text-align: left;
+            padding-left: 5px;
+        }
+
+        #enter {
+            grid-row: span 2;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="keys">Num Lock</div>
+        <div class="keys">/</div>
+        <div class="keys">*</div>
+        <div class="keys">-</div>
+
+        <div class="keys">7</div>
+        <div class="keys">8</div>
+        <div class="keys">9</div>
+        <div class="keys">+</div>
+
+        <div class="keys">4</div>
+        <div class="keys">5</div>
+        <div class="keys">6</div>
+        <div class="keys">.</div>
+
+        <div class="keys">1</div>
+        <div class="keys">2</div>
+        <div class="keys">3</div>
+        <div class="keys" id="enter">Enter</div>
+
+        <div class="keys" id="zero">0</div>
+        <div class="keys">,</div>
+    </section>
+</body>
+</html>
